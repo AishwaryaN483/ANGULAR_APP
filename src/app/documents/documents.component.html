@@ -1,0 +1,33 @@
+<div class="documents-container">
+  <h2>Uploaded Documents</h2>
+
+  <!-- Word Documents -->
+  <div *ngIf="docxFiles.length > 0" class="file-section">
+    <h3>📝 Word Documents</h3>
+    <div class="file-grid">
+      <div *ngFor="let file of docxFiles" class="file-card">
+        <p title="{{ file.name }}">{{ file.name }}</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Presentations -->
+  <div *ngIf="pptxFiles.length > 0" class="file-section">
+    <h3>🎤 Presentations</h3>
+    <div class="file-grid">
+      <div *ngFor="let file of pptxFiles" class="file-card">
+        <p title="{{ file.name }}">{{ file.name }}</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- PDF Files -->
+  <div *ngIf="pdfFiles.length > 0" class="file-section">
+    <h3>📄 PDF Files</h3>
+    <div class="file-grid">
+      <div *ngFor="let file of pdfFiles" class="file-card">
+        <p title="{{ file.name }}">{{ file.name }}</p>
+      </div>
+    </div>
+  </div>
+</div>

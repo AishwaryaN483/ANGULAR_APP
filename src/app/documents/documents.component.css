@@ -1,0 +1,88 @@
+/* Container styling */
+.documents-container {
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(180deg, #e3f2fd 0%, #bbdefb 100%);
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Main Title */
+h2 {
+  color: #0d47a1;
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+}
+
+/* Section headings */
+.file-section {
+  margin-bottom: 3rem;
+}
+
+.file-section h3 {
+  text-align: left;
+  font-size: 1.8rem;
+  color: #1565c0;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+/* Grid layout for documents */
+.file-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+/* Each file card box */
+.file-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1.2rem;
+  box-shadow: 0 4px 12px rgba(13, 71, 161, 0.15);
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #0d47a1;
+  word-wrap: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 2px solid transparent;
+}
+
+.file-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(13, 71, 161, 0.25);
+  border-color: #2196f3;
+}
+
+/* File text responsive wrapping */
+.file-card p {
+  margin: 0;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  max-width: 100%;
+  color: #0d47a1;
+}
+
+/* Responsive behavior for smaller screens */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 2rem;
+  }
+
+  .file-section h3 {
+    font-size: 1.5rem;
+  }
+
+  .file-card {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+}

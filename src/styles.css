@@ -1,1 +1,61 @@
-/* You can add global styles to this file, and also import other style files */
+/* ===== Global Theme Styles ===== */
+:root {
+  --primary-blue: #007bff;
+  --light-blue: #e3f2fd;
+  --dark-blue: #0d47a1;
+  --text-color: #0a1f44;
+  --background-color: #f9fbfd;
+  --card-bg: #ffffff;
+}
+
+/* ===== Base Page ===== */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-size: 18px; /* increased font size */
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== Headings ===== */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--dark-blue);
+  font-weight: 600;
+}
+
+/* ===== Buttons ===== */
+button {
+  background-color: var(--primary-blue);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: var(--dark-blue);
+}
+
+/* ===== Cards/Containers ===== */
+.container {
+  background-color: var(--card-bg);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 24px;
+  margin: 24px auto;
+  max-width: 800px;
+}
+
+/* ===== Links ===== */
+a {
+  color: var(--primary-blue);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
